@@ -4,10 +4,10 @@ import javax.imageio.*;   //ImageIO
 import java.io.*;   //File
 import javax.swing.*;   //JTextArea
 
-public class Bar extends JTextArea {
+public class TextArea extends JTextArea {
     BufferedImage bufferedImage;
     TexturePaint texturePaint;
-    public Bar(String s) {
+    public TextArea(String s) {
 	super();
 	try {
 	    File file=new File(s);

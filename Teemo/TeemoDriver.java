@@ -3,19 +3,19 @@ import java.awt.event.*;
 import java.awt.*;
 import java.io.*;
 
-public class Foo {
+public class TeemoDriver {
     int teemoDeaths=0;
     boolean revTeemo=false;
     JFrame frame=new JFrame("Kill Teemo App");
     JPanel panel=new JPanel();
     JButton button=new JButton("Kill Teemo");
     //JTextArea text=new JTextArea(10,20);
-    Bar text=new Bar("teemo2.jpeg");
+    TextArea text=new TextArea("teemo2.jpeg");
     JScrollPane scroller=new JScrollPane(text);
     JLabel label=new JLabel("Teemo Deaths: "+teemoDeaths);
     JCheckBox check=new JCheckBox("Revive Teemo");
     public static void main(String[] args) {
-	Foo foo=new Foo();
+	TeemoDriver foo=new TeemoDriver();
 	foo.go();
     }
     public class ButtonListener implements ActionListener {
